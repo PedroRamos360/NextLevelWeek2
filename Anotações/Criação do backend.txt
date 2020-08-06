@@ -1,0 +1,24 @@
+- Mesmas dependências do frontend + node.js;
+- yarn init -y;
+OBS: -y se refere a responder sim para todas perguntas, 
+caso necessário respostas diferentes remover a marcação.
+- Adicionar pasta src e dentro dela um arquivo => index.js;
+OBS: no curso está sendo usado .ts para typescript para funções adicionais mas
+o mais comum é .js. Para usar typescript é necessário instalá-lo como dependencia:
+yarn add typescript -D.
+- baixar nodemon como dependência de desenvolvimento para restartar o server
+OBS: no curso foi usado ts-node-dev;
+- Instalar express: yarn add expresss;
+- Importar express no server.js e declarar uma const app com o valor da função
+express();
+- Colocar uma porta para o servidor ouvir: app.listen(3333);
+- Criar rotas com os métodos HTTP: GET, POST, PUT, DELETE.
+- Enviar respostas em JSON;
+- Usar insomnia para poder testar os outros métodos HTTP: o navegador entende apenas
+o método get.
+- Instalar sqlite3;
+- Instalar knex para escrever sql com sintaxe de javascript (opcional);
+- Criar arquivo para fazer as conexões com o banco de dados;
+- Configurar migrations com knex;
+- Instalar cors para fazer a conexão entre o backend e o frontend;
+

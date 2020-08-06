@@ -1,0 +1,6 @@
+- Instalar chocolatey;
+- Instalar yarn;
+- Instalar npm;
+- yarn create react-app nomeDoApp ou npx create-react-app nomeDoApp;
+- Provavel dependência: react-router-dom => usado para navegação;
+- Para instalar: yarn add react-router-dom ou npm install react-router-dom.

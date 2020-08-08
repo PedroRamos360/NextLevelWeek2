@@ -2,35 +2,59 @@ import React from 'react';
 
 import whatsappIcon from '../../assets/images/icons/whatsapp.svg';
 import './styles.css';
+import api from '../../services/api';
 
-export default function TeacherItem() {
-   var link = "https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/f9ac30f7d5a40cfd5f288989c90032da-1596066158528/6ce577f6-3c16-4428-b803-0f1fece09e90.jpeg";
-   return(
+export interface Teacher {
+   avatar: string;
+   bio: string;
+   cost: number;
+   id: number;
+   name: string;
+   subject: string;
+   whatsapp: string;
+}
+
+interface TeacherItemProps {
+   teacher: Teacher;
+}
+
+const TeacherItem: React.FC<TeacherItemProps> = ({ teacher }) => {
+   function createNewConnection() {
+      api.post('connections', {
+         user_id: teacher.id,
+      })
+   }
+
+   return (
       <article className="teacher-item">
          <header>
-            <img src={link} alt="Pedro Ramos"/>
+            <img src={teacher.avatar} alt={teacher.name} />
             <div>
-               <strong>Pedro Ramos</strong>
-               <span>Matemática</span>
+               <strong>{teacher.name}</strong>
+               <span>{teacher.subject}</span>
             </div>
          </header>
 
          <p>
-            Professor de matemática com doutorado em ciência da computação.
-            <br/>
-            Apaixonado por ensinar e desenvolver programas usando as tecnologias mais modernas do mercado.
+            {teacher.bio}
          </p>
 
          <footer>
             <p>
                Preço/hora
-               <strong>R$ 80,00</strong>
+               <strong>R$ {teacher.cost}</strong>
             </p>
-            <button type="button">
+            <a
+               target="blank"
+               href={`https://wa.me/${teacher.whatsapp}`}
+               onClick={createNewConnection}
+            >
                <img src={whatsappIcon} alt="whatsapp"/>
                Entrar em contato
-            </button>
+            </a>
          </footer>
       </article>
    )
 }
+
+export default TeacherItem;

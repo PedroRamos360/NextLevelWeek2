@@ -1,0 +1,11 @@
+- Baixar expo com algum package manager: yarn ou npm;
+- Entrar na pasta do projeto e rodar: expo init;
+- Escolher template do expo;
+- Rodar yarn start pra iniciar servidor do expo;
+- Abrir a aplicação através do dispositivo físico com o app do expo ou através de simulador;
+  - Se for simulador baixar expo através do comando: expo client:install:android.
+- Instalar dependências para navegação:
+yarn add @react-navigation/native
+expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view
+yarn add @react-navigation/stack
+- Configurar rotas;

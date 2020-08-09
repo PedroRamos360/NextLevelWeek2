@@ -1,1 +1,0 @@
-Migrations: controlam a versão do banco de dados

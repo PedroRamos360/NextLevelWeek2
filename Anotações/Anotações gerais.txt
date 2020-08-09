@@ -1,0 +1,24 @@
+--------------------BACKEND-------------------
+Feito com nodejs
+Migrations: controlam a versão do banco de dados
+
+--------------------WEB-------------------
+Feito com reactjs
+Html dentro do javascript => jsx
+
+--------------------MOBILE-------------------
+Feito com react-native
+Não são usados elementos de html: apenas tags criadas pela biblioteca react-native
+Não é usado css:
+- Para estilizar é necessário declarar propriedade "style" em cada elemento;
+- Separação de estilização com letra maiúscula em vez de um traço;
+- Todos elementos tem display flex por padrão e flex-direction é column;
+- Sintaxe de exemplo:
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});

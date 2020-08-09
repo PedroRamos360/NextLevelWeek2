@@ -1,0 +1,12 @@
+- Executar backend;
+- Executar frontend;
+- Instalar axios;
+- Criar arquivo para configuração da api e dentro dele criar uma api com o baseURL do
+backend;
+- Criar estados para receber as informações do backend;
+- O estado deve receber um valor default e só depois receber o valor buscado no backend
+- Usar useEffect para executar a requisição na api com o primeiro parâmetro sendo a função 
+que será executada e o segundo a váriavel que quando alterada a função executará, no caso,
+colocar array vazio para que só execute a requisição uma vez;
+
+

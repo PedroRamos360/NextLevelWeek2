@@ -1,0 +1,17 @@
+#page-register-sucess .content {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+#page-register-sucess h1 {
+   display: inline;
+   color: var(--color-secondary);
+   font-size: 5rem;
+}
+
+#page-register-sucess p {
+   color: var(--color-text-complement);
+   font-size: 2rem;
+}

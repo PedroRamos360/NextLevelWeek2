@@ -1,0 +1,54 @@
+#page-register-fail .content {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+#page-register-fail header {
+   top: 0;
+   width: 100vw;
+   height: 20rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+#page-register-fail h1 {
+   display: inline;
+   color: var(--color-primary);
+   font-size: 5rem;
+}
+
+#page-register-fail p {
+   color: var(--color-text-complement);
+}
+
+#page-register-fail a {
+   width: 50rem;
+   height: 5.6rem;
+   background: var(--color-secondary);
+   color: var(--color-button-text);
+   border: 0;
+   border-radius: 0.8rem;
+   cursor: pointer;
+   font: 700 1.6rem Archivo;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-decoration: none;
+   transition: background-color 0.2s;
+   outline: none;
+   margin-top: 3.2rem;
+}
+
+#page-register-fail a:hover {
+   background: var(--color-secondary-dark);
+}
+
+#page-register-fail a:active {
+   background: var(--color-secondary-darker);
+}
+
+
+

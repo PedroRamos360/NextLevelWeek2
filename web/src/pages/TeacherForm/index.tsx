@@ -58,11 +58,9 @@ export default function TeacherForm() {
          cost: Number(cost),
          schedule: scheduleItems
       }).then(() => {
-         alert('Cadastro realizado com sucesso!');
-
-         history.push('/');
+         history.push('/give-classes/sucess');
       }).catch(() => {
-         alert('Erro no cadastro!');
+         history.push('/give-classes/fail');
       });
    }
    return (

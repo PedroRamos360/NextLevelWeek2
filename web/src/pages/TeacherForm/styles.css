@@ -108,7 +108,7 @@
 }
 
 #page-teacher-form main footer button:active {
-   background-color: #049947;
+   background: var(--color-secondary-darker);
 }
 
 @media (min-width: 700px) {
